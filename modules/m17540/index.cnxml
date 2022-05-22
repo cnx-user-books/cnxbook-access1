@@ -1,0 +1,86 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Tạo Form Wizard và Report Wizard</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>d2ec3846-4b4f-49a1-8585-71d4a6151624</md:uuid>
+</metadata>
+  <content>
+    <para id="id4546676">TẠO FORM VÀ REPORT BẰNG WIZARD</para>
+    <list list-type="enumerated" id="id4546684">
+      <item>Tạo Form bằng Wizard:</item>
+    </list>
+    <para id="id4546693">Bước 1: Tạo Query làm nguồn dữ liệu cho form (nếu cần). Nếu tạo Form dạng Main/Sub thì trong query làm nguồn dữ liệu cho Sub form phải có một Field giống với Field (được chọn làm khóa chính) có trên main Form. </para>
+    <para id="id4546720">Buớc 2: Tại cửa sổ CSDL, chọn lớp Form, nhắp <figure id="id4546729"><media id="idm2999648" alt=""><image src="../../media/graphics1-abdc.png" mime-type="image/png" height="28" width="46"/></media></figure>, chọn Form Wizard -&gt; OK</para>
+    <para id="id4546756">* Nếu tạo Form đơn (các Field đưa vào Form lấy từ một Table) thì:</para>
+    <para id="id4546763">Bước 3a: Trong khung Tables/Queries, chọn Table có chứa các Field cần đưa lên Form</para>
+    <para id="id4546771">Bước 4a: Nhắp chọn Field trong hộp thoại Available Field rồi nhắp <figure id="id4546784"><media id="idm1809024" alt=""><image src="../../media/graphics2-ae40.png" mime-type="image/png" height="22" width="33"/></media></figure>, sẽ đưa Field đã chọn vào hộp Selected Field.(Còn nếu chọn <figure id="id4546816"><media id="idm1743376" alt=""><image src="../../media/graphics3-4a66.png" mime-type="image/png" height="25" width="34"/></media></figure> sẽ đưa tất cả các Field của bảng đang chọn vào Form) Sau đó nhắp <figure id="id4544454"><media id="idm10606720" alt=""><image src="../../media/graphics4-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4544476">Bước 5a: Chọn kiểu trình bày Form: </para>
+    <list list-type="bulleted" id="id4544482">
+      <item>Columnar: sắp các Field theo cột</item>
+      <item>Tabular: Trình bày Form dạng bảng</item>
+      <item>Datasheet: Trình bày Form dạng DataSheet</item>
+      <item>Justified: các Field được sắp từ trái qua phải</item>
+    </list>
+    <para id="id4544512">Sau đó nhắp <figure id="id4544523"><media id="idm1317200" alt=""><image src="../../media/graphics5-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4544545">Bước 6a: Chọn kiểu trình bày nền và dữ liệu cho Form, nhắp Next</para>
+    <para id="id4544552">Bước 7: Đặt tiêu đề cho Form, rồi nhắp Finish.</para>
+    <para id="id4544558">* Nếu tạo Form dạng Main/sub (các Field đưa vào Form lấy từ nhiều Table/Queries):</para>
+    <para id="id4544568">Bước 3b: Trong khung Tables/Queries, chọn Table có chứa các Field cần đưa lên Main Form, chọn các Field trong khung Available Field đưa vào Selected Field để đưa lên Main Form</para>
+    <para id="id4544582">Bước 4b: : Trong khung Tables/Queries, chọn Table có chứa các Field cần đưa lên Sub Form, chọn các Field trong khung Available Field đưa vào Selected Field để đưa lên Sub Form. Nhắp <figure id="id4544600"><media id="idp97744" alt=""><image src="../../media/graphics6-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4544622">Bước 5b: Chọn hình thức trình bày Form, nhắp <figure id="id4544634"><media id="idm3514144" alt=""><image src="../../media/graphics7-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4544660">Bước 6b: Chọn kiểu trình bày cho SubForm, nhắp <figure id="id4544673"><media id="idp4616592" alt=""><image src="../../media/graphics8-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4544695">Bước 7b: Chọn kiểu trình bày cho Main Form, nhắp <figure id="id4544707"><media id="idm10442528" alt=""><image src="../../media/graphics9-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4544729">Bước 8b: Đặt tiêu đề cho Form, nhắp <figure id="id4544741"><media id="idm1411168" alt=""><image src="../../media/graphics10-6d1e.png" mime-type="image/png" height="27" width="80"/></media></figure></para>
+    <list list-type="enumerated" id="id4544763">
+      <item>Xem kết quả Form:</item>
+    </list>
+    <para id="id4544773">- Tại cửa sổ CSDL, chọn Form cần xem</para>
+    <para id="id4544779">- Nhắp Open: mở Form ở chế độ xem dữ liệu</para>
+    <para id="id4544785">- Nhắp Design: mở Form ở chế độ Thiết kế</para>
+    <para id="id4544791">III. Tạo Report bằng Wizard:</para>
+    <para id="id4544800">B1: Tạo Query làm nguồn dữ liệu cho Report (Nếu cần)</para>
+    <para id="id4544813">B2: Chọn lớp Report-&gt; nhắp <figure id="id4544826"><media id="idm4628480" alt=""><image src="../../media/graphics11-abdc.png" mime-type="image/png" height="28" width="46"/></media></figure></para>
+    <figure id="id4544851">
+      <media id="idm4514144" alt=""><image src="../../media/graphics12-cfe9.png" mime-type="image/png" height="281" width="373"/></media>
+    </figure>
+    <list list-type="bulleted" id="id4544873">
+      <item>Nếu muốn tạo Report dạng Wizard thì chọn Report Wizard-&gt;OK</item>
+      <item>Nếu muốn tạo Report dạng nhãn thì chọn Label Wizard -&gt; chọn Table hoặc query làm nguồn dữ liệu cho Report tại mục: Choose the table or query where the object’s data comes from.</item>
+    </list>
+    <list list-type="enumerated" id="id4544901">
+      <item>Tạo Report dạng Wizard:</item>
+    </list>
+    <para id="id4544910">B3a: Trong khung Tables/ Queries, chọn Table hoặc query có chứa các Field cần đưa vào Report. Trong khung Available Field, chọn các Field để đưa vào Report, sau đó nhắp <figure id="id4544931"><media id="idp3617072" alt=""><image src="../../media/graphics13-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4544953">B4a: Chọn các Field làm các cấp phân nhóm, nhắp <figure id="id4544969"><media id="idm11358720" alt=""><image src="../../media/graphics14-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4544991">B5a: Chọn Field làm chỉ tiêu sắp xếp, nhắp <figure id="id4545008"><media id="idp2297968" alt=""><image src="../../media/graphics15-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4545030">B6a: Chọn hình thức trình bày dữ liệu trên Report, nhắp <figure id="id4545046"><media id="idp7205408" alt=""><image src="../../media/graphics16-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4545068">B7a: Chọn kiểu Report, nhắp <figure id="id4545084"><media id="idp1661968" alt=""><image src="../../media/graphics17-6e04.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4545106">B8a: Đặt tiêu đề cho Report, nhắp <figure id="id4545122"><media id="idp442880" alt=""><image src="../../media/graphics18.png" mime-type="image/png" height="27" width="80"/></media></figure></para>
+    <para id="id4545144">2) Tạo Report dạng nhãn: </para>
+    <para id="id4545149">B3b: Trong khung Label type, chọn loại nhãn (thường chọn 5096) </para>
+    <para id="id4545163"> + Dimensions: kích thước nhãn</para>
+    <para id="id4545170"> + Number Across: số nhãn trên một hàng ngang</para>
+    <para id="id4545177">-&gt; Nhắp <figure id="id4545187"><media id="idm5117200" alt=""><image src="../../media/graphics19.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4545209"> B4b: Chọn Font chữ, cỡ chữ -&gt; Nhắp <figure id="id4545229"><media id="idp1576448" alt=""><image src="../../media/graphics20.png" mime-type="image/png" height="23" width="80"/></media></figure></para>
+    <para id="id4545251"> B5b: Trong khung Prototype label, xây dựng nội dung nhãn-&gt; <figure id="id4547680"><media id="idp2002640" alt=""><image src="../../media/graphics21.png" mime-type="image/png" height="23" width="67"/></media></figure></para>
+    <para id="id4547702"> B6B: Đặt tên nhãn -&gt; nhắp <figure id="id4547714"><media id="idp1995440" alt=""><image src="../../media/graphics22.png" mime-type="image/png" height="27" width="80"/></media></figure></para>
+    <para id="id4547736">IV. Xem kết quả Report:</para>
+    <list list-type="bulleted" id="id4547741">
+      <item>Tại cửa sổ CSDL, chọn Report cần xem</item>
+      <item>Nhắp <figure id="id4547762"><media id="idm4493056" alt=""><image src="../../media/graphics23.png" mime-type="image/png" height="24" width="67"/></media></figure>: mở Report ở chế độ Print Prewiew (xem trang in)</item>
+      <item>Nhắp <figure id="id4547802"><media id="idm745024" alt=""><image src="../../media/graphics24.png" mime-type="image/png" height="26" width="58"/></media></figure>: mở Report ở chế độ thiết kế</item>
+    </list>
+    <para id="id4547830">V. Điều chỉnh thiết kế Form-Report: (vào chế độ Design)</para>
+    <para id="id4547844">1. Chỉnh Font chữ cho đối tượng:</para>
+    <para id="id4547849"> - Nhắp chọn đối tượng (giữ Shift để chọn nhiều đối tượng)</para>
+    <para id="id4547858"> - Nhắp <figure id="id4547869"><media id="idp1092544" alt=""><image src="../../media/graphics25.png" mime-type="image/png" height="28" width="210"/></media></figure>: Chọn Font chữ, cỡ chữ</para>
+    <para id="id4547896"> 2. Thay đổi kích thước đối tượng:</para>
+    <para id="id4547903"> Nhắp chọn đối tượng, đặt chuột tại 1 góc hoặc 1 cạnh của đối tượng, khi chuột có dạng mũi tên 2 đầu thì kéo chuột để thay đổi kích thước.</para>
+    <para id="id4547915"> 3. Di chuyển đối tượng:</para>
+    <para id="id4547921"> - Đặt chuột tại góc trên bên trái của đối tượng, khi chuột có dạng bàn tay Γ (bàn tay 1 ngón) thì kéo chuột để di chuyển đối tượng.</para>
+    <para id="id4547944"> - Đặt chuột bên trong đối tượng, khi chuột có dạng (bàn tay 5 ngón) thì kéo chuột để di chuyển tất cả các đối tượng đang chọn.</para>
+    <para id="id4547967"> 4. Chỉnh màu cho đối tượng:</para>
+    <para id="id4547974"> - Nhắp chọn đối tượng cần hiệu chỉnh</para>
+    <para id="id4547981"> - Chỉnh màu chữ của dữ liệu bên trong đối tượng, nhắp <figure id="id4547995"><media id="idp803232" alt=""><image src="../../media/graphics26.png" mime-type="image/png" height="26" width="44"/></media></figure></para>
+    <para id="id4548021"> - Chọn màu nền cho đối tượng, nhắp <figure id="id4548034"><media id="idp1527376" alt=""><image src="../../media/graphics27.png" mime-type="image/png" height="26" width="43"/></media></figure></para>
+    <para id="id4548056"> - Chọn kiểu đường viền: <figure id="id4548069"><media id="idm12025856" alt=""><image src="../../media/graphics28.png" mime-type="image/png" height="26" width="35"/></media></figure> hoặc <figure id="id4548098"><media id="idm6784" alt=""><image src="../../media/graphics29.png" mime-type="image/png" height="26" width="39"/></media></figure></para>
+  </content>
+</document>

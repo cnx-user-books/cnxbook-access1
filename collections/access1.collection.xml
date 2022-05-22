@@ -1,0 +1,16 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="vi">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10577</md:content-id>
+    <md:title>Access1</md:title>
+    <md:language>vi</md:language>
+    <md:license url="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution License</md:license>
+    <md:uuid>01b16985-bdf2-4f92-8388-036afba827f3</md:uuid>
+<md:slug>access1</md:slug>
+</metadata>
+  <col:content>
+    <col:module document="m17537"/>
+    <col:module document="m17538"/>
+    <col:module document="m17539"/>
+    <col:module document="m17540"/>
+  </col:content>
+</col:collection>

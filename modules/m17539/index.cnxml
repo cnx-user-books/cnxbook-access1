@@ -1,0 +1,214 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Query - Bảng vấn tin</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>292794a7-8d38-4eee-b1b3-5c2f323b54c0</md:uuid>
+</metadata>
+  <content>
+    <para id="id47395137">QUERY-BẢNG VẤN TIN</para>
+    <para id="id47395145">I. Khái niệm:</para>
+    <para id="id47395153">Query là công cụ khai thác và xử lý dữ liệu, đáp ứng các nhu cầu tra cứu dữ liệu của bảng dữ liệu.</para>
+    <para id="id47395165">II. Tạo mới và xem kết quả một query:</para>
+    <para id="id47395182">1. Tạo mới một query:</para>
+    <para id="id47408951"> Bước 1: Tại cửa sổ CSDL, chọn lớp Queries-&gt; nhắp <figure id="id47408962"><media id="idm7783680" alt=""><image src="../../media/graphics1-abdc.png" mime-type="image/png" height="28" width="46"/></media></figure>-&gt; chọn Design View -&gt; OK</para>
+    <para id="id47408992"> Bước 2: Xác định các Table/Query tham gia vấn tin tại hộp thoại Show Table bằng cách chọn các Table/Query rồi nhắp <figure id="id47409008"><media id="idm8915536" alt=""><image src="../../media/graphics2-a951.png" mime-type="image/png" height="24" width="71"/></media></figure>. Sau khi chọn xong nhắp <figure id="id47309210"><media id="idm5082544" alt=""><image src="../../media/graphics3-a778.png" mime-type="image/png" height="23" width="72"/></media></figure>. (nếu chọn dư Table thì nhắp vào Table cần xóa, nhấn Delete. Nếu thiếu Table thì nhắp vào <figure id="id47309244"><media id="idm16831904" alt=""><image src="../../media/graphics4-de11.png" mime-type="image/png" height="25" width="27"/></media></figure> để hiện lại hộp thoại Show Table.)</para>
+    <para id="id47309274"> Bước 3: Xác định quan hệ giữa các Table nếu có nhiều Table tham gia vấn tin</para>
+    <figure id="id46745514">
+      <media id="idm5002624" alt=""><image src="../../media/graphics5-a9f7.png" mime-type="image/png" height="322" width="577"/></media>
+    </figure>
+    <para id="id46745538"> Bước 4: Xác định nội dung vấn tin như sau:</para>
+    <para id="id46745546"> 4.1: Xác định các Field tham gia vấn tin tại dòng Field:</para>
+    <para id="id46745553"> * Nếu Field có sẵn thì có 2 cách để chọn:</para>
+    <list list-type="bulleted" id="id46745560">
+      <item>Nhắp chuột tại Field cần lấy nội dung và kéo vào dòng Field</item>
+      <item>Nhắp đúp tại Field cần lấy nội dung</item>
+    </list>
+    <para id="id46745578"> * Nếu Field chưa có thì phải tạo Field tính toán.</para>
+    <para id="id47394925">4.2 Xác định chỉ tiêu sắp xếp tại dòng Sort</para>
+    <list list-type="bulleted" id="id47394931">
+      <item>Ascending: tăng dần</item>
+      <item>Descending: giảm dần</item>
+      <item>(not sorted): không sắp xếp</item>
+    </list>
+    <para id="id47394953">4.3 Xác định ẩn/hiện nội dung các Field tại dòng Show</para>
+    <para id="id47394960">4.4 Đặt điều kiện lọc dữ liệu tại các dòng Criteria, or…</para>
+    <para id="id47394966">Bước 5: Lưu query</para>
+    <para id="id47394971">Nhắp File/Save hoặc nhắp <figure id="id47394980"><media id="idm17787664" alt=""><image src="../../media/graphics6-e23f.png" mime-type="image/png" height="18" width="19"/></media></figure>, đặt tên cho Query -&gt;OK</para>
+    <para id="id47391808">2. Xem kết quả Query:</para>
+    <para id="id47391816">* Tại cửa sổ CSDL:</para>
+    <para id="id47391825"> + Chọn Query cần mở</para>
+    <para id="id47391831"> + Nhắp <figure id="id47391843"><media id="idm9154336" alt=""><image src="../../media/graphics7-b91b.png" mime-type="image/png" height="27" width="63"/></media></figure>: mở query ở chế độ Design View (để hiệu chỉnh)</para>
+    <para id="id47049682"> + Nhắp <figure id="id47049694"><media id="idm3768112" alt=""><image src="../../media/graphics8-331c.png" mime-type="image/png" height="28" width="51"/></media></figure>: mở query ở chế độ Datasheet View (để hiển thị dữ liệu)</para>
+    <figure id="id47049728">
+      <media id="idm17699616" alt=""><image src="../../media/graphics9-fab1.png" mime-type="image/png" height="127" width="460"/></media>
+    </figure>
+    <para id="id47049751">*Nếu query đang mở, có thể sử dụng các biểu tượng:</para>
+    <para id="id47411067"> + <figure id="id47411075"><media id="idm1915760" alt=""><image src="../../media/graphics10-d337.png" mime-type="image/png" height="29" width="27"/></media></figure>: chuyển từ chế độ Design View sang chế độ Datasheet View</para>
+    <para id="id47411107"> + <figure id="id47411112"><media id="idm9454048" alt=""><image src="../../media/graphics11-2117.png" mime-type="image/png" height="27" width="26"/></media></figure>: chuyển từ chế độ Datasheet View sang chế độ Design View</para>
+    <para id="id46745800">3. Tạo Field tính toán trong Query:</para>
+    <para id="id46745809"> Quy tắc: &lt;Tên field tính toán&gt;:&lt;Biểu thức&gt;</para>
+    <para id="id46745816"> Các field mà tên có khoảng trắng ở giữa, viết trong biều thức phải đặt trong dấu [ ].</para>
+    <para id="id46745828"> Tên field tính toán không được đặt trùng với tên Field có mặt trong các Table/Query tham gia vấn tin.</para>
+    <para id="id46745837">Hàm IIF: </para>
+    <para id="id46745842">IIF(điều kiện, biểu thức 1, biểu thức 2)</para>
+    <para id="id46745848"> Trả về giá trị của biểu thức 1 nếu điều kiện đúng, trả về giá trị của biểu thức 2 nếu điều kiện sai.</para>
+    <para id="id46745858"> Ví dụ: a=4,b=3</para>
+    <para id="id46745867">IIF(a&lt;b,a+b,a-b) trả về ?</para>
+    <para id="id47410100">4.Chỉnh thuộc tính một cột trong Query:</para>
+    <para id="id47410110"> Nhắp chuột tại cột cần chỉnh thuộc tính rồi làm theo một trong 2 cách:</para>
+    <list list-type="bulleted" id="id47410118">
+      <item>Nhắp menu View-&gt;Properties</item>
+      <item>Nhắp biểu tượng <figure id="id47410139"><media id="idm3673104" alt=""><image src="../../media/graphics12-ffea.png" mime-type="image/png" height="26" width="26"/></media></figure> trên Toolbar (hoặc nhắp nút phải chuột -&gt; chọn Properties)</item>
+    </list>
+    <para id="id47410169">Chỉnh thuộc tính:</para>
+    <para id="id47411548">- Format: dạng hiện dữ liệu</para>
+    <para id="id47411554">- Decimal places: số số lẻ</para>
+    <para id="id47411559">- Caption: tiêu đề cột</para>
+    <para id="id47411564">5. Hiển thị một số Record theo lựa chọn Top Value:</para>
+    <para id="id47411571"> Nhắp chuột tại biểu tượng <figure id="id47411584"><media id="idm7100688" alt=""><image src="../../media/graphics13-d3be.png" mime-type="image/png" height="27" width="67"/></media></figure> (Top Value) và chọn theo các chỉ tiêu sau:</para>
+    <para id="id47411613"> All: Hiện tất cả record của Query</para>
+    <para id="id47058484"> 5: Hiện 5 record đầu tiên của Query </para>
+    <para id="id47058501">.  25: Hiện 5 record đầu tiên của Query ….</para>
+    <para id="id47058519">III. Các phép toán:</para>
+    <para id="id47058528">a. Các phép toán số học:</para>
+    <para id="id47058533"> + Cộng</para>
+    <para id="id47058541"> -  Trừ</para>
+    <para id="id47058549"> * Nhân</para>
+    <para id="id47048210"> / Chia</para>
+    <para id="id47048218"> \  Phép chia nguyên</para>
+    <para id="id47048226"> Mod Chia lấy phần dư</para>
+    <para id="id47048234">b. Phép toán ghép chuỗi:</para>
+    <para id="id47048239"> Cú pháp: &lt;Biểu thức chuỗi 1&gt;&amp;&lt;Biểu thức chuỗi 2&gt;</para>
+    <para id="id47048246"> Công dụng: ghép biểu thức chuỗi 1 vào biểu thức chuỗi 2.</para>
+    <para id="id47048254"> Ví dụ: ghép 2 field HO và TEN thành field HOTEN</para>
+    <para id="id47048261"> HOTEN:HO&amp;” “ &amp;TEN</para>
+    <para id="id47048267">c. Các phép toán so sánh:</para>
+    <para id="id47048272"> Ký hiệu Nội dung</para>
+    <para id="id47048281"> =  bằng</para>
+    <para id="id47393940"> &gt;  lớn hơn</para>
+    <para id="id47393949"> &lt;  nhỏ hơn</para>
+    <para id="id47393958"> &gt;=  lớn hơn hoặc bằng</para>
+    <para id="id47393968"> &lt;=  nhỏ hơn hoặc bằng</para>
+    <para id="id47393978">d. Các phép toán logic:</para>
+    <para id="id47393983"> NOT:</para>
+    <table id="id47393988" summary="">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <tbody>
+          <row>
+            <entry> A</entry>
+            <entry>Not A</entry>
+          </row>
+          <row>
+            <entry>True</entry>
+            <entry>False</entry>
+          </row>
+          <row>
+            <entry>False</entry>
+            <entry>True</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para id="id46747022"/>
+    <para id="id46747026">AND:</para>
+    <table id="id46747031" summary="">
+      <tgroup cols="3">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <tbody>
+          <row>
+            <entry>A</entry>
+            <entry>B</entry>
+            <entry>A AND B</entry>
+          </row>
+          <row>
+            <entry>True</entry>
+            <entry>True</entry>
+            <entry>True</entry>
+          </row>
+          <row>
+            <entry>True</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+          </row>
+          <row>
+            <entry>False</entry>
+            <entry>True</entry>
+            <entry>False</entry>
+          </row>
+          <row>
+            <entry>False</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para id="id47052620">OR:</para>
+    <table id="id47052624" summary="">
+      <tgroup cols="3">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <tbody>
+          <row>
+            <entry>A</entry>
+            <entry>B</entry>
+            <entry>A OR B</entry>
+          </row>
+          <row>
+            <entry>True</entry>
+            <entry>True</entry>
+            <entry>True</entry>
+          </row>
+          <row>
+            <entry>True</entry>
+            <entry>False</entry>
+            <entry>True</entry>
+          </row>
+          <row>
+            <entry>False</entry>
+            <entry>True</entry>
+            <entry>True</entry>
+          </row>
+          <row>
+            <entry>False</entry>
+            <entry>False</entry>
+            <entry>False</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <para id="id47394180"> Áp dụng cho việc đặt điều kiện trong query:</para>
+    <list list-type="bulleted" id="id47394186">
+      <item>Điều kiện đặt ở nhiều cột viết trên cùng một dòng thì có thể hiểu theo phép toán AND</item>
+    </list>
+    <para id="id47394197"> - Điều kiện đặt ở nhiều cột viết trên nhiều dòng thì có thể hiểu theo phép toán OR</para>
+    <para id="id47394211">Ví dụ : Lọc ra những học sinh có điểm Toán và Lý từ 8 trở lên.</para>
+    <figure id="id47051650">
+      <media id="idm1271808" alt=""><image src="../../media/graphics14-1592.png" mime-type="image/png" height="320" width="576"/></media>
+    </figure>
+    <para id="id47051674">e. Phép đối sánh mẫu:</para>
+    <para id="id47051679"> Cú pháp: LIKE &lt;mẫu dữ liệu&gt;</para>
+    <para id="id47051688"> Công dụng: so sánh chuỗi dữ liệu với mẫu dữ liệu sau LIKE. Nếu giống thì trả về True, ngược lại trả về False</para>
+    <para id="id47051698"> *: Đại diện cho nhiều ký tự</para>
+    <para id="id47051705"> ?: Đại diện cho một ký tự</para>
+    <para id="id47393454"> #: Đại diện cho một chữ số.</para>
+    <para id="id47393460"> Ví dụ: nếu ký tự thứ 3 của lớp là A thì điểm thêm là 1, ngược lại là 0. </para>
+    <para id="id47393472">Diemthem: IIF(LOP like “??A*”,1,0)</para>
+    <para id="id47393481">f. phép toán BETWEEN…AND</para>
+    <para id="id47393486"> Cú pháp: </para>
+    <para id="id47393492"> Between &lt;giá trị 1&gt; and &lt;giá trị 2&gt;</para>
+    <para id="id47393498"> Công dụng:</para>
+    <para id="id47393504"> Cho kết quả = True nếu giá trị đem so sánh nằm trong giới hạn giữa giá trị 1 và giá trị 2, ngược lại cho kết quả là False.</para>
+    <para id="id47393518"> Ví dụ: Nếu mua hàng trong tháng 4 thì tiền phải trả bằng 90% thành tiền, ngược lại không được giảm giá)</para>
+    <para id="id47393158">Tienphaitra: iif(ngaymua between #1/4/2008# and #30/4/2008#,thanhtien*90/100, thanhtien)</para>
+    <para id="id47393167">g. Phép toán IN:</para>
+    <para id="id47393172"> Cú pháp: </para>
+    <para id="id47393178"> In (&lt;giá trị 1&gt;,&lt;giá trị 2&gt;,…,&lt;giá trị n&gt;)</para>
+    <para id="id47393185"> Công dụng: Cho kết quả bằng True nếu giá trị cần so sánh bằng một trong các giá trị: giá trị 1&gt;,&lt;giá trị 2&gt;,…,&lt;giá trị n&gt;. Ngược lại trả về False.</para>
+    <para id="id47393197"> Ví dụ: nếu học sinh thuộc 2 lớp 12A1 và 12A2 thì học bổng là 200000, ngược lại bằng 0</para>
+    <para id="id47393206"> Hocbong:IIF(lop in(“12A1”,”12A2”),200000,0)</para>
+  </content>
+</document>
